@@ -10,10 +10,10 @@ const studentOne = {
   gradDate: null,
 };
 
-studentOne['subArray'] = [1, 2, 3];
-console.log(studentOne.subArray);
-console.log(studentOne['subArray']);
-
+studentOne['newKeyName'] = [1, 2, 3];
+console.log(studentOne.newKeyName);
+console.log(studentOne['newKeyName']);
+console['log']('hello');
 
 studentOne.subObject = {
   hello: 'world'

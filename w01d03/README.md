@@ -1,10 +1,10 @@
 # W01D03 - Objects in JS
 
 ### To Do
-- [ ] Review primitive types
-- [ ] Objects!
-- [ ] Passing primitives and objects to functions
-- [ ] Functions inside objects (using `this`)
+- [x] Review primitive types
+- [x] Objects!
+- [x] Passing primitives and objects to functions
+- [x] Functions inside objects (using `this`)
 
 ### Primitive Types
 * simplest form that data can be reduced to
@@ -20,7 +20,13 @@
 * null
 * Symbol
 
+### Objects
+* collection of key/value pairs
+* has behaviour
+* keys in an object are always strings
 
+### Array
+* collection of values (objects)
 
 
 
