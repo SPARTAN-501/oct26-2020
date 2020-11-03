@@ -16,7 +16,21 @@
  *    0
  */
 const min = function(arr) {
+  // start with the highest possible value in JS
+  let lowest = Infinity;
+  // let lowest = arr[0];
 
+  // iterate through the array
+  for (const element of arr) {
+    // compare each element to the current lowest value
+    if (element < lowest) {
+      // if the element is lower, update the current lowest value
+      lowest = element;
+    }
+  }
+
+  // return the lowest value
+  return lowest;
 };
 
 
@@ -32,7 +46,15 @@ const min = function(arr) {
  *    9
  */
 const max = function(arr) {
+  let highest = -Infinity;
 
+  for (const element of arr) {
+    if (element > highest) {
+      highest = element;
+    }
+  }
+
+  return highest;
 };
 
 /* ===========================================================================
@@ -47,7 +69,10 @@ const max = function(arr) {
  *    9
  */
 const range = function(arr) {
+  const highest = max(arr);
+  const lowest = min(arr);
 
+  return highest - lowest;
 };
 
 // Don't change below:
