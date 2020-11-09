@@ -2,9 +2,9 @@
 
 ### To Do
 - [x] Intro to Web Servers
-- [ ] Intro to Express
-- [ ] What is "Middleware?"
-- [ ] Custom Middleware
+- [x] Intro to Express
+- [x] What is "Middleware?"
+- [x] Custom Middleware
 - [ ] Server-side view templates with EJS
 
 W3 - Back End/Server-side
@@ -28,9 +28,15 @@ Vagrantfile => forward ports
 * GET /users, POST /login
 
 
+GET /users
+app.get('/users', () => {});
 
+POST /login
+app.post('/login', () => {});
 
-
+### Middleware
+* software (AKA functions) that sit between something
+* software that sits between the request and the reponse
 
 
 
