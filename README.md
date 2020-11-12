@@ -8,3 +8,5 @@
 * [W02D04 - Promises](https://github.com/andydlindsay/oct26-2020/tree/master/w02d04)
 * [W03D01 - Web Servers 101](https://github.com/andydlindsay/oct26-2020/tree/master/w03d01)
 * [W03D03 - HTTP Cookies & User Authentication](https://github.com/andydlindsay/oct26-2020/tree/master/w03d03)
+* [W04D01 - Intro to CSS](https://github.com/andydlindsay/oct26-2020/tree/master/w04d01)
+* [W04D02 - Client Side JavaScript & jQuery](https://github.com/andydlindsay/oct26-2020/tree/master/w04d02)
