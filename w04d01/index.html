@@ -5,26 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Semantic</title>
 
-  <style>
-    /* header {
-      font-size: 36px;
-      color: orange;
-      text-decoration: underline;
-      background-color: purple;
-    } */
-
-    aside, header {
-      font-size: 36px;
-      color: orange;
-      text-decoration: overline;
-      background-color: purple;
-    }   
-  </style>
+  <link rel="stylesheet" href="reset.css" />
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <div>
-    <header style="">My awesome page!</header>
-    <main>
+    <header class="purple-overline another-class">My awesome page!</header>
+    <main id="main-content">
       <figure>
         <img 
           src="https://andydlindsay-portfolio.s3.amazonaws.com/lighthouse/profile.jpeg" 
@@ -32,11 +19,19 @@
           width="400" 
           alt="image of me"
         />
+        <span>Does this work?</span>
         <figcaption>A photo of me!</figcaption>
       </figure>
     </main>
-    <aside>More <mark>info</mark> about me</aside>
-    <footer>Copyright 2020 Andy</footer>
+    
+    <p class="blue-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. At esse cumque, sapiente optio sed expedita consequatur eaque in culpa? Accusamus debitis ipsam soluta nisi ullam?</p>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem deserunt esse, velit minima error eveniet accusamus, deleniti, modi quo nemo provident tenetur? Cupiditate, possimus quisquam nesciunt ab est sed praesentium?</p>
+
+
+    <aside>More stuff</aside>
+    <aside class="purple-overline">More <mark>info</mark> about me</aside>
+    <footer class="another-class">Copyright 2020 Andy</footer>
   </div>
 </body>
 </html>
