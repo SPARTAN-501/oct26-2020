@@ -2,10 +2,25 @@
   <head>
     <title>My Page</title>
     <link rel="stylesheet" href="styles.css" />
+
+    <script>
+      console.log('hello');
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+
+    <script src="app2.js"></script>
+   
   </head>
   <body>
     <h1>Welcome to my page!</h1>
     <div class="content">
+      <div>
+        <label>New fave number:</label>
+        <input type="text" id="new-number" />
+        <button type="button" id="add-new-number">Click me</button>
+      </div>
+
       <p>My Favourite Numbers</p>
       <ul id="main-list">
         <li>One</li>
@@ -13,5 +28,7 @@
         <li>Three</li>
       </ul>
     </div>
+    
+     <script src="app.js"></script>
   </body>
 </html>
