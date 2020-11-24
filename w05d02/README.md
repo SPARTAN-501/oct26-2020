@@ -60,7 +60,7 @@
 ### Student Suggestion: Uber/Ride Hailing
 We created an ERD for a fictional Uber competitor:
 
-![Jurassic Park](https://andydlindsay-portfolio.s3.amazonaws.com/lighthouse/uber.png)
+![Jurassic Park](https://raw.githubusercontent.com/andydlindsay/oct26-2020/master/w05d02/jurassic.png)
 
 ### Useful Links
 * [Database Normalization](https://en.wikipedia.org/wiki/Database_normalization)
