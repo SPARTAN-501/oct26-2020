@@ -57,8 +57,7 @@
 ### Breakout: Convert Two Spreadsheets
 - [Gist with instruction](https://gist.github.com/andydlindsay/20e7305e853bad7b587f294b054cf8de)
 
-### Student Suggestion: Uber/Ride Hailing
-We created an ERD for a fictional Uber competitor:
+### Student Collaboration ERD: Jurassic Park
 
 ![Jurassic Park](https://raw.githubusercontent.com/andydlindsay/oct26-2020/master/w05d02/jurassic.png)
 
