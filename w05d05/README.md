@@ -1,79 +1,60 @@
 # W05D05 - Mid-term Project Kickoff
 
-### Outcomes
-* work on a team
-* put all your skills together/practice
-* practice building something
-* little less hand-holding
-
 ### Pick a Project
+- Wiki Map
+- Quiz App
+- Story Creator
+- Decision Maker
+- PasswordKeepR
+- Smart TODO List
+- Resource Wall
+- Buy/Sell Listing Website
+- Schoodle
+- Food Pick-up Ordering
 
-### User Story
-* Describes how a user will interact with your app
+### User Stories
+- A _user story_ describes how users will interact with your application
+- They have the form: As a ______, I want to ______, because ______.
+- eg. As a _user_, I want to _be able to save posts_, because _I want to review them later_.
+- User stories can also be negated: As a _____, I shouldn't be able to ______, because _____.
+- eg. As a _user_, I shouldn't be able to _edit other users posts_, because _I don't own those posts_.
 
-* As a _____, I can ______, because _____
-* As a user, I can see a list of available maps, because I want to see things of interest in my area
-* As a user, I can see a menu for a local restaurant, because I am hungry
+### User Scenarios
+- A _user scenario_ is a syntactic alternative to user stories
+- They have the form: Given _____, when ______, then ______.
+- eg. Given _that I am logged in_, when _I click favourite on a post_, then _it is added to my favourites_.
+- You can also chain on an _and_ to user stories/scenarios
+- eg. Given _that I am logged in_, when _I click favourite on a post_, then _it is added to my favourites_ **and** _the save icon will change to indicate success_.
 
-* As a logged-in user, I can edit a map, because I want to add more POI
-* As a non-logged-in user, I cannot edit maps, because they don't belong to me
-
-* As a logged-in user, I can favourite a map for later, because I want to view it again AND the heart icon turns red
-
-### User Stories give us nouns
-* nouns become your entities/tables
-* leads to your ERD
+### ERD
+- The user stories provide you with nouns (eg. user, posts, favourites)
+- Use these nouns/entities to build out your database (ie. tables are the nouns from the stories)
 
 ### Routes
-* RESTful routes to interact with our resources
-* BREAD/CRUD operations on each table
+- Once you know the resources that you'll have, write out the routes that you'll need to perform BREAD operations on those resources
+- Remember RESTful conventions (they make it much easier)
 
+### MVP vs MVD
+- There is a concept in development of an MVP, the Minimum Viable Product
+- An MVP has just enough features to be useful to a user
+- This concept helps streamline the development process and help keep the team on target
+- For mid-terms, we want to focus on the MVD, the Minimum Viable Demo
+- **If you aren't going to demo it, don't build it**
 
-* REpresentational State Transfer
-* Routes represent the underlying resources
-
-// without PUT/PATCH
-Browse  GET /dinosaurs
-Read    GET /dinosaurs/:id
-Edit    POST /dinosaurs/:id
-Add     POST /dinosaurs
-Delete  POST /dinosaurs/:id/delete
-
-// with PUT/PATCH
-Browse  GET     /dinosaurs
-Read    GET     /dinosaurs/:id
-Edit    PATCH   /dinosaurs/:id
-Add     POST    /dinosaurs
-Delete  DELETE  /dinosaurs/:id
-
-app.patch('/dinosaurs/:id', () => {});
-
-GET /users/:user_id/tweets/:tweet_id/comments
-GET /maps/:id/pins
-
-GET /all-the-dinos
-POST /create-a-new-dino
-
-### SPA vs Multi-page
-* not mutually exclusive
-* choice is up to you/team
-
-### MVP
-* Most Valuable Primate
-* Minimum Viable Product
-* Minimum Viable Demo (MVD)
-* If you don't demo it, don't build it
-
-requirements => user stories => ERD => routes
-
-### UI/Mockups/Wireframes
-* window into our data
+### Wireframes
+- Draw out the structure of your web pages
+- This will make it much easier to build out these pages later
+- This is also a great opportunity to get input from all of the team members
+- Design matters... however you are a developer, not a designer
+- Get inspiration from websites you visit
 
 ### User Login
-* don't do it
-* seriously don't
+- Don't do it
+- Seriously, don't do it
+- We know that you know how to register and login users
 
 ```js
+// do this instead
 app.get('/login/:id', (req, res) => {
   req.session.user_id = req.params.id;
   res.redirect('/');
@@ -81,48 +62,37 @@ app.get('/login/:id', (req, res) => {
 ```
 
 ### Tech Choices
-* BE === Node/Express/Postgres
-* FE === HTML, CSS, JS, jQuery, CSS Grid, Flexbox, Bootstrap
+- We have made all the tech choices for you
+- Back End: Node and Express
+- Front End: HTML, CSS, JS, jQuery, Bootstrap
 
-### The Skeleton
+### The Mid-term Skeleton
+- Use the provided `node-skeleton` as a template for your project
+- This will get you up and running quickly
+
+### SPA vs Multi-page App
+- These concepts are not mutually exclusive
+- You can choose one or the other or both
 
 ### Git
-* Merge conflicts
-* Use best practices: branches, commit regularly
-* merge locally or merge in the cloud (Pull Requests)
+- Use Git best practices (ask a mentor for clarification if you need it)
+- Use branches
 
-git pull origin master/main
-git pull
-git push origin my-branch
-git pom
+### DO NOT CODE ON MASTER
+- I repeat, do not code on master
 
-1. pull latest master
-2. checkout your branch
-3. work on your branch committing frequently
-4. push regularly
-5. merge locally/merge in the cloud (PR)
-6. pull latest master
-
-### DO NOT CODE ON MASTER/MAIN
-
-`git branch`
-
-### Splitting Up The Work
-* Horizontally - everyone working on the same layer
-* Vertically - one on FE and one on BE
-* Pair Programming
+### Splitting up the Work
+- Horizontally - whole team working on front-end or back-end at the same time
+- Vertically - divide the work between front-end and back-end
+- Pair Programming - working together on the same tasks
 
 ### Communication
+- Make sure to communicate with your team members
+- Use Slack, iMessage, Google Hangouts, whatever... just make sure that everyone is on the same page
 
 ### Github Projects
-* kanban board trello
+- Github has a built-in project board (similar to a kanban board)
 
 ### Deployment
-* up to you and your team
-* Heroku or Digital Ocean
-
-
-
-
-
-# 
+- Decide if you want/need to deploy your application to the cloud
+- Ask a mentor for assistance/advice if your team decides to deploy
