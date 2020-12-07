@@ -15,3 +15,4 @@
 * [W05D03 - SQL from our Apps](https://github.com/andydlindsay/oct26-2020/tree/master/w05d03)
 * [W05D05 - Mid-term Project Kickoff](https://github.com/andydlindsay/oct26-2020/tree/master/w05d05)
 * [BREAKOUT - Postman](https://github.com/andydlindsay/oct26-2020/tree/master/breakout-postman)
+* [W07D02 - Immutable Update Patterns](https://github.com/andydlindsay/oct26-2020/tree/master/w07d02)
