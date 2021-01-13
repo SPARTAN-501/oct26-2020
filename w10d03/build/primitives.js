@@ -1,0 +1,12 @@
+"use strict";
+let username = 'Alice';
+username = 'Bob';
+username = false;
+username = 5;
+let truthy = false;
+let num = 5;
+// num = 'Bob';
+const numbers = [1, 2, 3];
+const strings = ['hello', 'goodbye'];
+numbers.push(6);
+numbers.push('hello');
